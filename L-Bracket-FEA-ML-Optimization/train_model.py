@@ -26,8 +26,8 @@ calculated_mae = mean_absolute_error(test_target, predictions)
 calculated_r2 = r2_score(test_target, predictions)
 
 print("\nMODEL PERFORMANCE RESULTS:")
-print(f" -> Mean Absolute Error (MAE): {calculated_mae:.4f}")
-print(f" -> R-squared (R2) Score: {calculated_r2:.4f}")
+print(f"-> Mean Absolute Error (MAE): {calculated_mae:.4f}")
+print(f"-> R-squared (R2) Score: {calculated_r2:.4f}")
 
 plt.figure(figsize = (6, 6))
 plt.scatter(test_target, predictions, color = "blue", edgecolors = "k", alpha = 0.7, label = "Predicted vs Actual")
