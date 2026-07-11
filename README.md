@@ -11,5 +11,5 @@ Independent Project for the UC Santa Cruz AIEA Lab Internship
 * **Target Output:** Minimum Safety Factor.
 
 ## How to Run
-1. Install dependencies: `pip install pandas numpy scikit-learn matplotlib`
+1. Install essential modules using Terminal: `pip install pandas numpy scikit-learn matplotlib`
 2. Run the script: `python train_model.py`
