@@ -41,6 +41,6 @@ plt.ylabel("AI Predicted Safety Factor (Neural Network)")
 plt.legend()
 plt.grid(True)
 
-plt.savefig("results_graph.png", dpi=300)
+plt.savefig("results_graph.png", dpi = 300)
 print("\nGraph successfully created and saved as 'results_graph.png'")
 plt.show()
