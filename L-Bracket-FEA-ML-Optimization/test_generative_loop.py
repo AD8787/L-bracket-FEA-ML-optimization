@@ -14,8 +14,8 @@ scaled_features = data_scaler.fit_transform(features)
 ann_model = MLPRegressor(hidden_layer_sizes = (75, 75), activation = "relu", max_iter = 2000, random_state = 42)
 ann_model.fit(scaled_features, target)
 
-abs_min_sf = 2.0 #absolute minimum safety factor considered before part is rendered unsuable
-target_sf = 4.0 #the safety factor each part should target to be at
+abs_min_sf = 2.0 
+target_sf = 4.0 
 num_candidates = 10000
 np.random.seed(42)
 
