@@ -15,7 +15,7 @@ ann_model = MLPRegressor(hidden_layer_sizes = (75, 75), activation = "relu", max
 ann_model.fit(scaled_features, target)
 
 abs_min_sf = 2.0 
-target_sf = 4.0 
+target_sf = 4.0
 num_candidates = 10000
 np.random.seed(42)
 
@@ -34,7 +34,7 @@ optimal_design = valid_designs.sort_values(by = "Thickness_mm").iloc[0]
 
 print(f"\nOptimal Bracket Design for Target Safety Factor of {target_sf}:")
 print(f"- Absolute Minimum Safety Factor: {abs_min_sf}")
-print(f"- Target Safety Factor: {target_sf}")
+print(f"- Target Safety Factor: ≥ {target_sf}")
 print(f"- Optimal Thickness: {optimal_design['Thickness_mm']:.2f} mm")
 print(f"- Optimal Fillet Radius: {optimal_design['Fillet_Radius_mm']:.2f} mm")
 print(f"- Optimal Hole Diameter: {optimal_design['Hole_Diameter_mm']:.2f} mm")
