@@ -23,11 +23,7 @@ candidate_thickness = np.random.uniform(1.0, 10.0, num_candidates)
 candidate_fillet = np.random.uniform(1.0, 5.0, num_candidates)
 candidate_hole = np.random.uniform(1.0, 10.0, num_candidates)
 
-candidates_df = pd.DataFrame({
-    "Thickness_mm": candidate_thickness,
-    "Fillet_Radius_mm": candidate_fillet,
-    "Hole_Diameter_mm": candidate_hole
-})
+candidates_df = pd.DataFrame({"Thickness_mm": candidate_thickness, "Fillet_Radius_mm": candidate_fillet, "Hole_Diameter_mm": candidate_hole})
 
 scaled_candidates = data_scaler.transform(candidates_df)
 predicted_sf = ann_model.predict(scaled_candidates)
