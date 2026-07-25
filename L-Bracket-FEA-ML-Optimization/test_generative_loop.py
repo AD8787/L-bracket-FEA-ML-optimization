@@ -36,7 +36,7 @@ candidates_df["Predicted_Safety_Factor"] = predicted_sf
 valid_designs = candidates_df[candidates_df["Predicted_Safety_Factor"] >= target_sf].copy()
 optimal_design = valid_designs.sort_values(by = "Thickness_mm").iloc[0]
 
-print("\nOptimal Bracket Design for Target Safety Factor of {target_sf}:")
+print(f"\nOptimal Bracket Design for Target Safety Factor of {target_sf}:")
 print(f"- Absolute Minimum Safety Factor: {abs_min_sf}")
 print(f"- Target Safety Factor: {target_sf}")
 print(f"- Optimal Thickness: {optimal_design['Thickness_mm']:.2f} mm")
