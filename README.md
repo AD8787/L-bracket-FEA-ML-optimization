@@ -2,9 +2,13 @@
 Independent Project for the UC Santa Cruz AIEA Lab Internship
 
 ## Project Structure
-* `bracket_training_data.csv`: Custom dataset containing 20 simulation runs from Autodesk Fusion.
-* `train_model.py`: Python script that creates and trains the model. 
-* `results_graph.png`: The image generated accuracy scatter plot.
+  - Week 4:
+    * `bracket_training_data.csv`: Custom dataset containing 20 simulation runs from Autodesk Fusion.
+    * `train_model.py`: Python script that creates and trains the model. 
+    * `results_graph.png`: The image generated accuracy scatter plot.
+      
+  - Week 6:
+    * `test_generative_loop.py`: Creates generative loop in Python to optimize variables (the inputs below and the target output of the safety factor) in the L-bracket using spreadsheet data.
 
 ## Core Features
 * **Inputs:** Bracket Thickness (mm), Fillet Radius (mm), and Hole Diameter (mm).
